@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+.navbar {
+  background-color: #1a1a1d;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff; 
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.navbar-brand {
+  cursor: pointer;
+}
+
+.navbar-brand img {
+  height: 100px; 
+  width: auto;
+  filter: drop-shadow(0 0 10px #cc0000); 
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.1); 
+  filter: drop-shadow(0 0 20px #cc0000); 
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar .btn {
+  border: 2px solid #cc0000;
+  padding: 0.3rem 0.6rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  color: #ffffff;
+  background-color: #1a1a1d; 
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
+  margin: 0.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar .btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(204, 0, 0, 0.5), transparent);
+  transition: transform 0.3s;
+  transform: translateX(-100%);
+}
+
+.navbar .btn:hover::before {
+  transform: translateX(100%);
+}
+
+.navbar .btn:hover {
+  background-color: #cc0000; 
+  box-shadow: 0 0 15px rgba(204, 0, 0, 0.6); 
+  transform: translateY(-2px); 
+}
+
+.navbar .btn.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.register-link, .admin-login-link {
+  color: #cc0000; 
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s;
+}
+
+.register-link::before, .admin-login-link::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #cc0000;
+  transform: translateX(-100%);
+  transition: transform 0.3s;
+}
+
+.register-link:hover::before, .admin-login-link:hover::before {
+  transform: translateX(100%);
+}
+
+.register-link:hover, .admin-login-link:hover {
+  color: #ffffff; 
+}
+
+@media (min-width: 576px) {
+  .navbar-brand img {
+    height: 120px;
+  }
+
+  .navbar .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-brand img {
+    height: 140px;
+  }
+
+  .navbar .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+  }
+}
+
+.mt-3 {
+  color: rgb(0, 0, 0);
+}

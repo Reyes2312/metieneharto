@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+.modal-content {
+  background-color: #040f1f; /* Fondo oscuro */
+  color: #000000; /* Texto blanco */
+  border: 2px solid #007bff; /* Borde azul */
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.6); /* Sombra azul */
+  font-family: 'Orbitron', sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff; /* Texto azul */
+  text-shadow: 0 0 5px #007bff, 0 0 10px #007bff, 0 0 15px #007bff;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.form-control {
+  font-size: 1rem;
+  padding: 10px;
+  background-color: #ffffff; /* Fondo blanco para inputs */
+  color: #000000; /* Texto negro */
+  border: 2px solid #007bff; /* Borde azul */
+  transition: border-color 0.3s;
+}
+
+.form-control:focus {
+  border-color: #007bff; /* Borde azul al enfocar */
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.6); /* Sombra azul al enfocar */
+}
+
+.btn-outline-secondary {
+  cursor: pointer;
+  border-color: #007bff; /* Borde azul */
+  color: #007bff; /* Texto azul */
+  background-color: transparent;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #007bff; /* Fondo azul al pasar el ratón */
+  color: #ffffff; /* Texto blanco al pasar el ratón */
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.6); /* Sombra azul */
+}
+
+.register-link {
+  color: #007bff; /* Enlaces azules */
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.register-link:hover {
+  color: #ffffff; /* Texto blanco al pasar el ratón */
+  text-shadow: 0 0 5px #007bff, 0 0 10px #007bff, 0 0 15px #007bff;
+}
+
+/* LoginComp.css */
+.form-group label {
+  color: black; /* Cambia el color de las etiquetas a negro */
+}
+
+.form-control {
+  color: black; /* Cambia el color del texto dentro del input a negro */
+}

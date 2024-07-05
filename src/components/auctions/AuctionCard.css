@@ -1,0 +1,128 @@
+/* Estilos para la tarjeta */
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  background: linear-gradient(145deg, #1e1e1e, #252525);
+  color: #fff;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+}
+
+.card-body {
+  padding: 20px;
+  background: #1e1e1e;
+  border-top: 1px solid #333;
+}
+
+.card-body p,
+.card-body h5 {
+  margin: 0;
+}
+
+.lead {
+  color: #ff0000; /* Cambiando el color a rojo */
+  text-shadow: 0 0 5px rgba(255, 0, 0, 0.7), 0 0 10px rgba(255, 0, 0, 0.5); /* Cambiando el color a rojo */
+}
+
+.display-6 {
+  font-size: 1.5rem;
+  color: #ff0000; /* Cambiando el color a rojo */
+}
+
+.card-text {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #ffffff; /* Texto blanco */
+}
+
+.d-flex.justify-content-between.align-items-center {
+  margin-top: 20px;
+}
+
+.w-100 {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.3); /* Cambiando el color a rojo */
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.7); /* Cambiando el color a rojo */
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.3); /* Cambiando el color a rojo */
+  }
+}
+
+.card-body h5,
+.card-body .display-6 {
+  animation: textGlow 1.5s infinite alternate;
+}
+
+@keyframes textGlow {
+  0% {
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.5), 0 0 10px rgba(255, 0, 0, 0.3); /* Cambiando el color a rojo */
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.7), 0 0 20px rgba(255, 0, 0, 0.5); /* Cambiando el color a rojo */
+  }
+}
+
+/* Estilos para los botones */
+.btn-outline-secondary,
+.btn-primary {
+  color: #ffffff; /* Texto blanco */
+  border: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn-outline-secondary {
+  background: linear-gradient(145deg, #000000, #000000); /* Cambiando el color a rojo */
+}
+
+.btn-outline-secondary:hover {
+  background: linear-gradient(145deg, #ff0000, #ff0000); /* Cambiando el color a rojo */
+  transform: scale(1.05);
+}
+
+.btn-primary {
+  background-color: #ff0000; /* Cambiando el color a rojo */
+}
+
+.btn-primary:hover {
+  background-color: darkred; /* Cambiando el color a rojo oscuro */
+  border-color: darkred; /* Cambiando el color del borde */
+}
+
+/* Estilos para la alerta de error */
+.alert-danger {
+  background-color: darkred;
+  border-color: darkred;
+  color: #ffffff; /* Texto blanco */
+}
+
+/* Estilos para el encabezado y pie de modal */
+.modal-header {
+  background-color: black;
+  color: #ffffff; /* Texto blanco */
+}
+
+.modal-footer {
+  background-color: black;
+}
+
+/* Estilos para las etiquetas de formulario */
+.form-label {
+  color: white; /* Texto blanco */
+}
+
+/* Estilos para el contenido del modal */
+.modal-content {
+  background-color: #333;
+  color: #ffffff; /* Texto blanco */
+}
